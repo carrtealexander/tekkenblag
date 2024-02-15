@@ -1,0 +1,157 @@
+:root {
+  
+    --border-radius: 0.3rem;
+  }
+  
+  body {
+    font-family: Arial;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    background-color: var(--quatrinary);
+  }
+  
+  a {
+    
+    text-decoration: none;
+  }
+  
+  a:visited {
+   
+  }
+  
+  header {
+    padding: 40px;
+    text-align: center;
+    
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+  
+  aside {
+    flex: 0;
+    
+    padding: 80px;
+    text-align: left;
+   
+  }
+  
+  nav {
+    display: flex;
+    background-color: var(--secondary);
+  }
+  
+  nav a {
+    
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+ 
+  
+  .gallery {
+    flex: 4;
+   
+    padding: 50px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn-no-style {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 100%;
+    
+    margin-left: 16px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .painting {
+    width: 50%;
+    
+    margin-bottom: 25px;
+  }
+  
+  .painting-details {
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  
+ 
+  .card {
+    margin: 20px;
+    flex: 0 1 300px;
+    border: 7px double var(--dark);
+    border-radius: 10px;
+   
+  }
+  
+  .login-card {
+    margin: 0 0 20px 0;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 5px;
+    border: 3px solid;
+    
+    border-style: double;
+    border-width: thick;
+    
+  }
+  
+  .card header {
+    
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    background-color: var(--tertiary);
+    padding: 0.625rem;
+    border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
+  }
+  
+  .card-body {
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .gallery-name {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px var(--secondary);
+    border: 10px groove var(--light);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+  
+  
+  .container {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    align-items: center;
+  }
+  
+  .galleries {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }

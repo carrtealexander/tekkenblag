@@ -1,0 +1,20 @@
+<div class="col-12 p-4">
+    <h4>Title</h4>
+    <textarea class="w-100 mb-1" name="title" id="title" cols="1" rows="1">{{post.title}}</textarea>
+    <h4>Post</h4>
+    <textarea class="w-100 mb-5" name="content" id="content" cols="30" rows="20">{{post.content}}</textarea>
+    <div class="btn-group w-100  bg-dark text-white p-3">
+        {{#if newPost}}
+        <button class="btn btn-success mx-3" id="createPost">Create Post</button>
+        <button class="btn btn-danger mx-3" id="cancelPost">Cancel</button>
+        {{else}}
+        <button class="btn btn-success mx-3" id="updatePost">Update Post</button>
+        <button class="btn btn-danger mx-3" id="deletePost">Delete Post</button>
+        {{/if}}
+    </div>
+</div>
+{{#if newPost}}
+<script src="../js/post.js"></script>
+{{else}}
+<script src="../../js/post.js"></script>
+{{/if}}
